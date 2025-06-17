@@ -1,0 +1,32 @@
+name: Validate Token Icon
+
+on:
+  pull_request:
+    paths:
+      - 'branding/icon.png'
+
+jobs:
+  validate-icon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check icon.png exists
+        run: |
+          if [ ! -f branding/icon.png ]; then
+            echo "branding/icon.png not found!" && exit 1
+          fi
+      - name: Validate PNG and size
+        run: |
+          filetype=$(file --mime-type -b branding/icon.png)
+          if [ "$filetype" != "image/png" ]; then
+            echo "icon.png is not a PNG file!" && exit 1
+          fi
+          dimensions=$(identify -format "%wx%h" branding/icon.png)
+          if [ "$dimensions" != "1024x1024" ]; then
+            echo "icon.png must be 1024x1024 pixels!" && exit 1
+          fi
+        shell: bash
+        env:
+          MAGICK_CONFIGURE_PATH: /usr/share/ImageMagick-6/
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick 
