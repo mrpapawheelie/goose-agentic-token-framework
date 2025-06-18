@@ -166,6 +166,7 @@ Once your model is selected:
 2. Run a **deep research query** for your token (**$1–2 USDC**)
 3. Copy the output markdown
 4. Paste it into your GitHub repo under:
+5. See [research/README.md](../research/README.md) for detailed instructions and a sample query.
 
 # Creating the Perfect Token
 
