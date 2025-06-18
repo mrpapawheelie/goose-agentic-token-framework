@@ -39,8 +39,8 @@ Alliterated token names follow **phonetic alliteration**, meaning they repeat th
 
 | Name              | Ticker | Vibe                                 |
 |-------------------|--------|--------------------------------------|
-| Blitz Pulse       | BZPL   | HFT-style strike bot                 |
-| Feral Flux        | FRFX   | Wild, reactive price action          |
+| Blitz Burst       | BZBT/BURST/BLITZ   | HFT-style strike bot                 |
+| Feral FX        | FEFX   | Wild, reactive price action          |
 | Phantom Force     | PHFX   | Appears suddenly, dominates          |
 | Signal Storm      | SGST   | Market chaos and trend chasing       |
 | Kinetic Kore      | KNKR   | Constant energy, centered force      |
@@ -82,6 +82,90 @@ Alliterated token names follow **phonetic alliteration**, meaning they repeat th
 | Alpha Atom        | ALAT   | Core strength with smart moves       |
 
 ---
+
+# 🧠 Choose Your Token Framework
+
+When launching your token, one of the most important choices you'll make is how it's distributed. There are **6 distribution models**, each with tradeoffs in price stability, slippage, and market cap dynamics.
+
+---
+
+### 🧮 Distribution Models
+
+| Model   | Description                                                                                      |
+|---------|--------------------------------------------------------------------------------------------------|
+| **Flat**     | 🚨 Most ruggable. Easy to pump market cap quickly, but also easy to drain. High risk if you don't control most of supply. |
+| **Linear**   | Simple, slightly more stable than flat. Better for moderate growth while keeping some control. |
+| **Quadratic**| Balances early liquidity with some late-stage resistance. Ideal for more fair launches. |
+| **Cubic**    | More resistance as price climbs. Slower to grow market cap but builds stronger price floors. |
+| **Quartic**  | Great for stable growth with decent slippage protection. Strong mid-to-long-term floor. |
+| **Quintic**  | 🛡️ Maximum stability, minimum slippage. Requires deeper pockets to raise market cap. Best for long-term value. |
+
+> **📝 Tip:** If you're optimizing for low slippage and strong price floors, **Quintic** is your best bet.  
+> If you're trying to pump market cap and you're controlling most of the supply, **Flat** is viable—but beware: traders will wreck you if you don't have full control.
+
+---
+
+### ⚙️ Borrowing Settings
+
+Next, you'll choose whether to **enable borrowing** for your token.
+
+- ✅ **Borrowing ON** (Recommended):  
+  Token holders can borrow against their tokens *risk-free* with a **5% repayment fee**. As the token creator, you receive **40% of that fee**.  
+  This boosts user engagement while rewarding you directly.
+
+- 🚫 **Borrowing OFF**:  
+  Disables borrowing. Less complexity but also fewer incentives for holders to engage with your token.
+
+> **Best Practice:** Leave **borrowing enabled** unless you have a specific reason not to. It benefits both you and your community.
+
+---
+
+### 🤖 Agentic Setup (Optional but Smart)
+
+You can configure your token to work with **agentic strategies**—automated agents designed to grow your token's visibility, liquidity, and buy pressure.
+
+Examples:
+- An agent that auto-trades using Cordexium Signals
+- An agent that triggers dev buys based on momentum
+- An agent that bridges liquidity or stakes profits
+
+Set this up during launch or come back and add it later.
+
+---
+
+### 💰 Purchase Amount
+
+Based on the model you choose, the amount of tokens you receive will vary:
+
+- **Flat**: Get the most tokens—but weakest defense. Not ideal unless you control the market.
+- **Quintic**: Fewer tokens up front—but each one is worth more. Strong floor, strong hands.
+
+> **Reminder:** Don't let the number of tokens fool you. It's about control and floor strength, not quantity.
+
+---
+
+### 🔁 Buy & Sell Fees
+
+These fees fuel your token's **incentive pool** and **boost rewards** every two weeks. Choose carefully:
+
+- **Buy Fee:**  
+  - 🔥 Tempted to go high? Don't. High buy fees turn off new buyers.  
+  - 💡 Recommended: **1%** (Default), **Max: 2%**
+
+- **Sell Fee:**  
+  - Should be worse than borrowing to push holders toward staking, not dumping.  
+  - 💡 Recommended: **5–8%**
+
+---
+
+### 🧪 Final Step: Add Your Token Research
+
+Once your model is selected:
+
+1. Go to [research.heurist.ai](https://research.heurist.ai)
+2. Run a **deep research query** for your token (**$1–2 USDC**)
+3. Copy the output markdown
+4. Paste it into your GitHub repo under:
 
 # Creating the Perfect Token
 
